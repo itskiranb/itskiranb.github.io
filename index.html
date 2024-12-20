@@ -1,12 +1,92 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>Codeblocks</title>
-  <base href="codeblocks">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.45dab484693455bb.js" type="module"></script><script src="polyfills.9bfa439a45d1b5a0.js" type="module"></script><script src="main.1b217fdeeef340d8.js" type="module"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-</body></html>
+    <section id="home">
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I am Kiran Kumar. Explore my projects and get to know me!</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Fullstack Developer with 3.8 years of experience specializing in Java and Angular technologies. I currently work at Intellect Informatics Pvt Ltd, Hyderabad, Madhapur, since March 2021. I am passionate about learning new technologies and building robust applications. My expertise includes working on scalable applications and participating in every stage of the Software Development Life Cycle (SDLC).</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li><strong>Backend:</strong> Java, J2EE (J2SE, JDBC, Servlets), Spring Boot, Hibernate, JPA, RESTful Web Services, Microservices</li>
+            <li><strong>Frontend:</strong> Angular (versions 8/14/16), JavaScript, HTML, CSS</li>
+            <li><strong>Database:</strong> MySQL</li>
+            <li><strong>Messaging Systems:</strong> RabbitMQ, Kafka</li>
+            <li><strong>Version Control:</strong> Git, GitLab</li>
+            <li><strong>Build & Deployment:</strong> Maven, Jenkins</li>
+            <li><strong>Other Skills:</strong> SDLC, OOP, Communication, and Organizational Skills</li>
+            <li><strong>Tools & Environments:</strong> Eclipse, STS, Visual Studio Code, Apache Tomcat, Linux, Windows</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Coops India</h3>
+                <p><strong>Client:</strong> NABARD (National Bank for Agriculture and Rural Development)</p>
+                <p><strong>Technologies:</strong> Java 8, Spring Boot, JPA, MySQL, Angular 8</p>
+                <p><strong>Description:</strong> A system for auditing cooperative banks by digitizing physical records into a centralized database to identify gaps in data maintenance and improve record-keeping.</p>
+            </div>
+            <div class="project-item">
+                <h3>Lending Application</h3>
+                <p><strong>Client:</strong> Telangana Industrial Health Clinic Limited (TIHCL)</p>
+                <p><strong>Technologies:</strong> Java 8, Spring Boot, JPA, MySQL, Angular 14</p>
+                <p><strong>Description:</strong> A lending management system automating the loan lifecycle, including features for financial accounting and reporting such as trial balance, balance sheets, and profit & loss statements.</p>
+            </div>
+            <div class="project-item">
+                <h3>Data Capturing Tool (DCT)</h3>
+                <p><strong>Client:</strong> APCOB (The Andhra Pradesh State Co-Operative Bank Limited)</p>
+                <p><strong>Technologies:</strong> Java 17, Spring Boot, JPA, MySQL, Angular 14</p>
+                <p><strong>Description:</strong> A data entry tool integrated into an ERP system for capturing and monitoring data from field-level employees, enhancing decision-making and operational efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kiran Kumar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
