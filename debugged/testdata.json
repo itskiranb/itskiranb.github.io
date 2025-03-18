@@ -1,0 +1,20 @@
+{
+   "data":[
+      {
+         "question":"Question No 1",
+         "date":"29-12-2023",
+         "answer":[
+            {
+               "description":"This is some sample decription of the code snippet 1",
+               "code":"<p-editor [(ngModel)]=\"text\" [\nstyle]=\"{ height: '320px' }\">\n\n    <ng-template #header>\n    \n    <span class=\"ql-formats\">\n\n            <button type=\"butt\non\" class=\"ql-bold\" aria-label\n=\"Bold\"></button>\n            \n<button type=\"button\" class=\"q\nl-italic\" aria-label=\"Italic\">\n</button>\n            <button \ntype=\"button\" class=\"ql-underl\nine\" aria-label=\"Underline\"></\nbutton>\n        </span>\n    </\nng-template>\n</p-editor>",
+               "language":"java"
+            },
+            {
+               "description":"This is some sample decription of the code snippet 2",
+               "code":"<p-editor [(ngModel)]=\"text\" [style]=\"{ height: '320px' }\">\n    <ng-template #header>\n        <span class=\"ql-formats\">\n            <button type=\"button\" class=\"ql-bold\" aria-label=\"Bold\"></button>\n            <button type=\"button\" class=\"ql-italic\" aria-label=\"Italic\"></button>\n            <button type=\"button\" class=\"ql-underline\" aria-label=\"Underline\"></button>\n        </span>\n    </ng-template>\n</p-editor>",
+               "language":"html"
+            }
+         ]
+      }
+   ]
+}
