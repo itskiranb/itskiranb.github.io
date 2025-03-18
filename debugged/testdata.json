@@ -6,7 +6,7 @@
          "answer":[
             {
                "description":"This is some sample decription of the code snippet 1",
-               "code":"<p-editor [(ngModel)]=\"text\" [\nstyle]=\"{ height: '320px' }\">\n\n    <ng-template #header>\n    \n    <span class=\"ql-formats\">\n\n            <button type=\"butt\non\" class=\"ql-bold\" aria-label\n=\"Bold\"></button>\n            \n<button type=\"button\" class=\"q\nl-italic\" aria-label=\"Italic\">\n</button>\n            <button \ntype=\"button\" class=\"ql-underl\nine\" aria-label=\"Underline\"></\nbutton>\n        </span>\n    </\nng-template>\n</p-editor>",
+               "code":"getTheFile(download_url: string): Observable<MyFile> {\n    const headers = new Headers();\n    headers.append('Content-Type', 'application/json');\n    const options = new RequestOptions({ headers: headers });\n    return this._http.get(download_url)\n        .map((response: Response) => {\n            console.log(response.text());\n            return null;\n        })\n        .catch(e => {\n            if (e.status === 401) {\n                return Observable.throw('Unauthorized');\n            }\n            if (e.status === 404) {\n                return Observable.throw('Not found.');\n            }\n        });\n}",
                "language":"java"
             },
             {
